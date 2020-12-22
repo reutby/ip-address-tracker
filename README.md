@@ -5,3 +5,4 @@ I used the following technologies:
 - IPify API for fetching the data upon a search.
 
 enjoy :)
+link to the site: https://ip-address-tracker-4d753.web.app/
