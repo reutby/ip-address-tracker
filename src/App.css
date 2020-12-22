@@ -58,7 +58,7 @@ h1{
   display:flex;
   position: relative;
   flex-flow: row;
-  width: 50%;
+  width:1000px;
   height:auto;
   border-radius: 20px;
   z-index: 400;
