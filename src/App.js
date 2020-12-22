@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-
+import pattern from "./assets/images/pattern-bg.png";
+import IPTracker from "./containers/IPTracker/IPTracker";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <img className="header-pattern" src={pattern} alt="header-pattern" />
+      <h1>IP Address Tracker</h1>
+
+      <main>
+        <IPTracker />
+      </main>
     </div>
   );
 }

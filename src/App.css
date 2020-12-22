@@ -1,38 +1,126 @@
 .App {
   text-align: center;
+  font-family: 'Rubik', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.map-container{
+  height:1000px;
+  width:100%;
+  position: absolute;
+  z-index: -100;
+  top:300px;
+}
+h1{
+  color:white;
+  z-index: 300;
+  position: relative;
+  font-size: 2.5rem;
+  left:0;
+  top:0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.header-pattern{
+  width:100%;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  height: 300px;
+}
+
+.search-box{
+  z-index: 300;
+  position: relative;
+  top:0;
+}
+
+.search-input{
+  height: 40px;
+  width: 400px;
+  font-size: 1rem;
+  font-weight: 400;
+  border:none;
+  border-radius: 10px 0 0 10px;
+  padding: 10px;
+}
+
+.search-button{
+  background-color: black;
+  height: 60px;
+  width:50px;
+  border:none;
+  border-radius: 0 10px 10px 0;
+  padding: 13px 10px 15px 10px;
+
+}
+
+.results-div{
+  display:flex;
+  position: relative;
+  flex-flow: row;
+  width: 50%;
+  height:auto;
+  border-radius: 20px;
+  z-index: 400;
+  background-color: white;
+  text-align: left;
+  margin:60px auto;
+}
+.result-item{
+  display: block;
+  margin:40px 0px;
+  padding-left:30px ;
+  padding-right: 100px;
+  border-right: 1px solid lightgray;
+  width:auto;
+}
+
+.result-item p{
+  color:grey;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.loading {
+  text-align: center;
+  padding: 30px;
+  margin: 10px auto;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.result-item h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@media(max-width:800px){
+  .results-div{
+    flex-flow: column;
+    width: 80%;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  #last-item{
+    border-right:none;
+ }
+  .result-item{
+    border-right:none;
+    text-align: center;
+    margin:5px 5px;
+    padding:0 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .map-container{
+    height:800px;
+    width:100%;
+    position: absolute;
+    z-index: -100;
+    top:300px;
+  }
+
+  .search-input{
+    width: 70%;
+  }
+  
+  .header-pattern{
+    height: 450px;
   }
 }
